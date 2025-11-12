@@ -1,0 +1,33 @@
+{
+  "name": "PiPPlugin",
+  "id": "PiPPlugin",
+  "version": "1.0.0",
+  "description": "iOS画中画插件，支持应用后台自动开启画中画功能",
+  "_dp_type": "nativeplugin",
+  "_dp_nativeplugin": {
+    "ios": {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "PiPPlugin",
+          "class": "PictureInPictureModule"
+        },
+        {
+          "type": "module",
+          "name": "PiPPluginProxy",
+          "class": "PiPPluginProxy"
+        }
+      ],
+      "integrateType": "framework",
+      "deploymentTarget": "15.0",
+      "frameworks": [
+        "PiPPlugin.framework"
+      ],
+      "resources": [
+        "resources/floating_video_9_16.mp4",
+        "resources/floating_video_16_9.mp4"
+      ]
+    }
+  }
+}
+
