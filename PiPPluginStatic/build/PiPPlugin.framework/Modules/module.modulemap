@@ -1,0 +1,6 @@
+framework module PiPPlugin {
+  umbrella header "PiPPlugin.h"
+  export *
+
+  module * { export * }
+}
